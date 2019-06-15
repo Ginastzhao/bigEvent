@@ -165,27 +165,20 @@
                     console.log(backdata);
                     //渲染左边
                     $('.user_info img').attr('src',backdata.data.user_pic);
-                    $('.user_info span').html('欢迎$nbsp;$nbsp;'+backdata.data.nickname)
+                    $('.user_info span').html('欢迎&nbsp;&nbsp;'+backdata.data.nickname)
                     //渲染右边
                     $('.user_center_link img').attr('src',backdata.data.user_pic);                    
 
                 }
             })
-            // $.ajax({
-            //     type:'get',
-            //     url:'http://localhost:8000/admin/getuser',
-            //     success:function(backData){
-            //         //console.log(backData);
-            //         //渲染左边
-            //         $('.user_info span').html('欢迎&nbsp;&nbsp;'+backData.data.nickname);
-            //         $('.user_info img').attr('src',backData.data.user_pic);
-            //         //渲染右边
-            //         $('.user_center_link img').attr('src',backData.data.user_pic);
-            //     }
-            // });
 
 
 
+            //点击修改后重新加载页面
+            // $('.btn-success').on('click', function (e){
+            //     e.preventDefault();
+            //     window.location.href='./index.html'
+            // })
         })
 
 
